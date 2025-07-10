@@ -20,12 +20,13 @@ body {
   flex-direction: column;
 }
 
-/* Blurred overlay */
+/* Blurred overlay effect */
 body::before {
   content: "";
   position: fixed;
   top: 0; left: 0;
-  width: 100%; height: 100%;
+  width: 100%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(4px);
   z-index: -1;
@@ -65,14 +66,14 @@ nav ul li a:hover {
   background-color: #ff4caa;
 }
 
-/* Homepage left align (only if body has class="home") */
+/* Homepage (LEFT aligned) */
 body.home .hero {
   text-align: left;
   padding: 100px 40px;
   max-width: 600px;
 }
 
-/* Default hero (center for all other pages) */
+/* Other pages (CENTER aligned) */
 .hero {
   text-align: center;
   padding: 100px 40px;
@@ -105,7 +106,7 @@ footer {
   margin-top: auto;
 }
 
-/* Project/About block style */
+/* Project/About blocks */
 .project {
   background-color: rgba(255, 255, 255, 0.05);
   padding: 20px;
@@ -114,26 +115,33 @@ footer {
   border-radius: 6px;
 }
 
-/* Media styles */
+/* Media (images, videos) */
 img, video {
   width: 100%;
   margin-top: 10px;
   border-radius: 6px;
 }
 
-/* Bold + Pink links globally */
+/* Bold + Pink links (global) */
 a {
   color: #ff4caa;
   font-weight: bold;
+  text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
 }
 
-.link {
+/* Optional custom class for extra control */
+.pink-link {
   color: #ff4caa;
   font-weight: bold;
+  text-decoration: none;
+}
+
+.pink-link:hover {
+  text-decoration: underline;
 }
 
 /* Mobile Responsive */
