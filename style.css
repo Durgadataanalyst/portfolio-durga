@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-/* Body with blurred background image aligned right */
+/* Body with blurred background */
 body {
   font-family: 'Segoe UI', sans-serif;
   background-image: url('background.png');
@@ -65,14 +65,14 @@ nav ul li a:hover {
   background-color: #ff4caa;
 }
 
-/* Homepage (LEFT) */
+/* Homepage left align (only if body has class="home") */
 body.home .hero {
   text-align: left;
   padding: 100px 40px;
   max-width: 600px;
 }
 
-/* Other pages (CENTER) */
+/* Default hero (center for all other pages) */
 .hero {
   text-align: center;
   padding: 100px 40px;
@@ -80,7 +80,7 @@ body.home .hero {
   margin: auto;
 }
 
-/* Button styling */
+/* Buttons */
 .btn {
   display: inline-block;
   margin-top: 20px;
@@ -105,7 +105,7 @@ footer {
   margin-top: auto;
 }
 
-/* Project / About Blocks */
+/* Project/About block style */
 .project {
   background-color: rgba(255, 255, 255, 0.05);
   padding: 20px;
@@ -114,11 +114,26 @@ footer {
   border-radius: 6px;
 }
 
-/* Media */
+/* Media styles */
 img, video {
   width: 100%;
   margin-top: 10px;
   border-radius: 6px;
+}
+
+/* Bold + Pink links globally */
+a {
+  color: #ff4caa;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.link {
+  color: #ff4caa;
+  font-weight: bold;
 }
 
 /* Mobile Responsive */
