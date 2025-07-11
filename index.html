@@ -3,32 +3,149 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Durga | Home</title>
-  <!-- Stylish Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <title>Durga G | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-</head>
-<body class="home">
-  <header>
-    <nav>
-      <h1>Durga G</h1>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('background.png') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
 
-  <main class="hero">
-    <h2>Hello! I am Durga 👋</h2>
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #ff1493;
+      font-family: 'Lucida Handwriting', cursive;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 5px 10px;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      background-color: #d946ef;
+      border-radius: 5px;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 85vh;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      color: #ff1493;
+      margin: 0;
+    }
+
+    .hero p {
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      background-color: #d946ef;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      box-shadow: 0 0 15px #d946ef;
+      transform: scale(1.05);
+    }
+
+    /* Contact CTA Section */
+    .contact-cta {
+      background-color: rgba(0, 0, 0, 0.7);
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .contact-cta h2 {
+      font-size: 36px;
+      color: #ff1493;
+      margin-bottom: 15px;
+    }
+
+    .contact-cta p {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.8);
+      font-size: 14px;
+    }
+
+    footer span {
+      color: #ff1493;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Durga G</div>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <h1>Hello! I am Durga 👋</h1>
     <p>A passionate <strong>Data Analyst</strong> and <strong>Shopify Store Developer</strong>.</p>
-    <a href="resume.pdf" class="btn" target="_blank">📄 View My Resume</a>
-  </main>
+    <a href="resume.pdf" class="btn">📄 View My Resume</a>
+  </section>
+
+  <!-- Contact CTA Section -->
+  <section class="contact-cta">
+    <h2>Let’s Work Together!</h2>
+    <p>Looking for a reliable Data Analyst or Shopify Developer? Let’s connect.</p>
+    <a href="contact.html" class="btn">Contact Me</a>
+  </section>
 
   <footer>
-    <p>© 2025 Durga G | Portfolio Website</p>
+    © 2025 <span>Durga G</span> | Portfolio Website
   </footer>
+
 </body>
 </html>
